@@ -164,7 +164,7 @@ def simulate_one(int seed, int T, int a_target):
         p1g0_t = p1
         p0g0_t = 1. - p1g0_t
         a_counter += a_t
-        if a_counter == a_target:
+        if (a_counter == a_target) and a_t:
             t_target = t
             equal_group = (t_target % 2 == 0)
             if not equal_group:
