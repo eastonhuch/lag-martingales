@@ -22,8 +22,14 @@ def config_plt():
 config_plt()
 
 # Function for creating new axes
-def get_fig_ax(figsize=(5, 3.5)):
+def get_fig_ax(figsize=(3.6, 2.5)):
+    left_adjust = 0.17
+    bottom_adjust = 0.22
+    right_adjust = 0.96
+    top_adjust = 0.97
     fig, ax = plt.subplots(figsize=figsize)
+    fig.tight_layout()
+    plt.subplots_adjust(left_adjust, bottom_adjust, right_adjust, top_adjust)
     # ax.grid(which='major', color='#DDDDDD', linewidth=0.1, zorder=0)
     # ax.grid(which='minor', color='#EEEEEE', linestyle=':', linewidth=0.1, zorder=1)
     # ax.minorticks_on()
