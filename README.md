@@ -10,3 +10,6 @@ docker run -it --rm \
   -v /path/to/lag-martingales:/home/jovyan/lag-martingales \
   lag-martingales
 ```
+
+Compile the Cython code using this command: `python setup.py build_ext --inplace`.
+Then execute the notebook `simulation.ipynb`.
